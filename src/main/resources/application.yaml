@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Gino16/exams-properties.git
+          username: Gino16
+          password: ${GIT_PRIVATE_KEY}
+
+server:
+  port: 8888
